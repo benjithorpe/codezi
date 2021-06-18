@@ -1,0 +1,163 @@
+/* BASE STYLES
+============================================================== */
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html { font-size: 62.5%; }
+body { font-family: 'Trebuchet MS', Arial, sans-serif; }
+a:hover { color: #0fa0ce; }
+p{ line-height: 1.5; font-size: 1.5rem;}
+
+
+/* NAVIGATION
+=================================================================== */
+nav{
+	background-color: #fff;
+	min-height: 4em;
+	max-height: 10vh;
+	width: 100%;
+	border-bottom: 1px solid #f1f1f1;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.logo{
+	font-size: 1.5rem;
+	font-style: italic;
+	color: #555;
+	margin-right: auto; /* delete this line to make LOGO center */
+}
+/* TODO: add a style in-case logo is an image */
+
+nav ul{
+	width: 100%;
+	list-style: none;
+	display: none;
+	flex-direction: column;
+	gap: 1em;
+	font-size: 1.6rem;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	height: max-content;
+	overflow: hidden;
+	padding: 0.5em 0;
+	background-color: #fbfbfb;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.showNav{ display: flex; }
+
+nav ul li{
+	padding: 0 1em;
+	text-align: right;
+}
+
+nav li a{
+	text-decoration: none;
+	display: block;
+	color: #4169e1;
+}
+
+nav .burger{
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+	cursor: pointer;
+}
+
+nav .burger > div{
+	border-top: 3px solid #000000;
+	width: 3rem;
+}
+
+/* HEADINGS & HEADERS
+========================================================== */
+header{
+	padding: 1em;
+	line-height: 1.4;
+	background-color: #fbfbfb;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: .3em 0;
+	line-height: 1.4;
+}
+
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem; }
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+
+/* MEDIA QUERIES
+==================================================== */
+@media (min-width: 400px) {
+	nav{ padding: 1em 1.5em; }
+}
+
+@media (min-width: 576px) {
+/* ---- Headings ---- */
+	h1 { font-size: 5.0rem; }
+	h2 { font-size: 4.2rem; }
+	h3 { font-size: 3.6rem; }
+	h4 { font-size: 3.0rem; }
+	h5 { font-size: 2.4rem; }
+	h6 { font-size: 1.5rem; }
+
+/* ---- Navigations ---- */
+	nav{ min-height: 5em; }
+	.logo{ font-size: 1.7rem; }
+	nav ul{ font-size: 1.8rem; }
+}
+
+@media (min-width: 768px) {
+	/* ---- Navigations ---- */
+		nav ul{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			gap: initial;
+			position: static;
+			background-color: inherit;
+			border-bottom: none;
+		}
+
+		nav li a:hover{ color: blue; }
+		nav .burger{ display: none; }
+		.nav-center ul{ justify-content: center; }
+		.nav-left ul{ justify-content: flex-start; }
+
+	/* ---- Forms ---- */
+		form{ width: 90%; }
+		textarea{ min-height: 10em; }
+		label, .form-div label{
+			margin-bottom: 0.2em;
+			font-size: 1.9rem;
+		}
+		.form-div{ margin-bottom: 0.8em; }
+		form.half-width{ width: 50%; }
+		form.three-quart{ width: 75%; }
+
+	/* ---- Modals ---- */
+		.modal-content{ padding: 5vw; }
+		.modal-close::after{
+			font-size: 4rem;
+			right: 5rem;
+		}
+}
+
+	@media (min-width: 992px) {
+		.logo{ margin-left: 1%;}
+	}
