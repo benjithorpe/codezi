@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-html { font-size: 62.5%; }
+html { font-size: 62.5%; scroll-behavior: smooth; }
 body { font-family: 'Trebuchet MS', Arial, sans-serif; }
 a:hover { color: #0fa0ce; }
 p{ line-height: 1.5; font-size: 1.5rem;}
@@ -58,12 +58,8 @@ nav ul{
 nav ul li{
 	padding: 0 1em;
 	text-align: right;
-}
-
-nav li a{
 	text-decoration: none;
 	display: block;
-	color: #4169e1;
 }
 
 nav .burger{
@@ -123,41 +119,40 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 @media (min-width: 768px) {
-	/* ---- Navigations ---- */
-		nav ul{
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-end;
-			gap: initial;
-			position: static;
-			background-color: inherit;
-			border-bottom: none;
-		}
+/* ---- Navigations ---- */
+	nav ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		gap: initial;
+		position: static;
+		background-color: inherit;
+		border-bottom: none;
+	}
 
-		nav li a:hover{ color: blue; }
-		nav .burger{ display: none; }
-		.nav-center ul{ justify-content: center; }
-		.nav-left ul{ justify-content: flex-start; }
+	nav .burger{ display: none; }
+	.nav-center ul{ justify-content: center; }
+	.nav-left ul{ justify-content: flex-start; }
 
-	/* ---- Forms ---- */
-		form{ width: 90%; }
-		textarea{ min-height: 10em; }
-		label, .form-div label{
-			margin-bottom: 0.2em;
-			font-size: 1.9rem;
-		}
-		.form-div{ margin-bottom: 0.8em; }
-		form.half-width{ width: 50%; }
-		form.three-quart{ width: 75%; }
+/* ---- Forms ---- */
+	form{ width: 90%; }
+	textarea{ min-height: 10em; }
+	label, .form-div label{
+		margin-bottom: 0.2em;
+		font-size: 1.9rem;
+	}
+	.form-div{ margin-bottom: 0.8em; }
+	form.half-width{ width: 50%; }
+	form.three-quart{ width: 75%; }
 
-	/* ---- Modals ---- */
-		.modal-content{ padding: 5vw; }
-		.modal-close::after{
-			font-size: 4rem;
-			right: 5rem;
-		}
+/* ---- Modals ---- */
+	.modal-content{ padding: 5vw; }
+	.modal-close::after{
+		font-size: 4rem;
+		right: 5rem;
+	}
 }
 
-	@media (min-width: 992px) {
-		.logo{ margin-left: 1%;}
-	}
+@media (min-width: 992px) {
+	.logo{ margin-left: 1%;}
+}

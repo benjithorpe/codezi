@@ -10,10 +10,10 @@
 <nav>
   <div class="logo">Codezi</div>
   <ul>
-    <li><a href="/">Navigation</a></li>
-    <li><a href="/">Navigation</a></li>
-    <li><a href="/">Navigation</a></li>
-    <li><a href="/">Navigation</a></li>
+    <li>New Tab</li>
+    <li>Settings</li>
+    <li>Navigation</li>
+    <li>Navigation</li>
   </ul>
   <div class="burger">
     <div></div>
@@ -24,4 +24,9 @@
 
 <style>
   .logo { font-size: 2rem; }
+  ul li{
+    color: #4169e1;
+    cursor: pointer;
+  }
+  ul li:hover{ color: blue;}
 </style>
