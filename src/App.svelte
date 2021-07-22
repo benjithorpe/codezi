@@ -1,27 +1,40 @@
 <script>
-	import Navigation from './components/Navigation.svelte';
-	import TabsWrapper from './components/TabsWrapper.svelte';
-
-	// export let name = "World";
-	let projects = [
-    "This is a first project",
-    "I have another one to create",
-    "This will be fun to use",
-  ];
+	import { Route, router } from "tinro";
+	router.subscribe((_) => window.scrollTo(0, 0));
+	import Main from "./routes/Main.svelte";
+	import Work from "./routes/Work.svelte";
+	import Contact from "./routes/Contact.svelte";
+	import Home from "./routes/Home.svelte";
 </script>
 
-<Navigation />
-<main>
-	<!-- <Tabs tabTitle="A Title" /> -->
-	<TabsWrapper />
-	<!-- <h1>Hello {name}!</h1> -->
-	<!-- <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p> -->
-</main>
+<Route path="/">
+	<Main>
+		<Home />
+	</Main>
+</Route>
 
+<Route path="/work">
+	<Main>
+		<Work />
+	</Main>
+</Route>
+
+<Route path="/contact">
+	<Main>
+		<Contact />
+	</Main>
+</Route>
+
+<!-- <Route path="/">
+	<Main>
+		<Header />
+	</Main>
+</Route>
+
+<Route path="/">
+	<Main>
+		<Header />
+	</Main>
+</Route> -->
 <style>
-	main{
-		/* width: 98%; */
-		margin: auto;
-		height: 90vh;
-	}
 </style>
