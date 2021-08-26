@@ -1,3 +1,3 @@
 # Codezi
 
-A web development organization.
+A Web Development organization.

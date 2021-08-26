@@ -1,0 +1,115 @@
+header{
+  background-color: white;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header section{
+  display: grid;
+  margin-bottom: 2em;
+}
+h1{
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 0 .25em;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  padding: .7em 1em;
+  font-size: 1.55rem;
+  line-height: 1.5;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #444;
+}
+.cta{
+  width: max-content;
+  padding: .7em 1.5em;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #3DB2FF;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  justify-self: center;
+}
+
+/* ABOUT */
+#about{ padding: 1em; }
+
+h2{
+  font-size: 2.5rem;
+  color: #778;
+  margin: .7em 0;
+  text-align: center;
+}
+
+#about .summary p{
+  font-size: 1.55rem;
+  padding: .5em 1em;
+  line-height: 1.5;
+  color: #222;
+  text-align: center;
+}
+
+.features{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.features div{
+  width: 90%;
+  margin: auto;
+  padding: 1.25em 1.1em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.features h3{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: .5em;
+}
+
+.features div p{
+  font-size: 1.45rem;
+  line-height: 1.5;
+  color: #777;
+  text-align: center;
+}
+
+
+/* WORK */
+.projects{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.projects picture{
+  width: 90%;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2),
+              -1px -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+figcaption{
+  padding: .5em .75em;
+  font-size: 1.45rem;
+}
+
+figcaption h4{
+  margin: .5em 0;
+  color: #333;
+}
+
+figcaption p{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #666;
+}
