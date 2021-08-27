@@ -10,7 +10,6 @@ html{
 body{
   font-family: 'Trebuchet MS', Arial, sans-serif;
   min-height: 100vh;
-  width: 100%;
 }
 /* NAVIGATION */
 .logo{
@@ -69,78 +68,21 @@ img{
 /* MEDIA QUERIES */
 @media (min-width: 400px){
   nav{ padding: 1.8em 1.25em; }
-
-  main{
-    width: 92.5%;
-    margin: auto;
-  }
-
-  .intro p{ font-size: 1.67rem; }
-  #about .summary p{ font-size: 1.65rem; }
-  .features{ margin-top: 2em; }
-  .features div{ max-width: max-content; }
-
-  .features div p{
-    font-size: 1.55rem;
-    max-width: 50ch;
-    margin: auto;
-  }
-
-  .projects{ text-align: center; }
-  .projects picture{ width: 80%; }
-  figcaption p{
-    max-width: 45ch;
-    margin: auto;
-  }
-  picture > img{
-    max-width: 60%;
-    max-height: 15em;
-  }
 }
 
-@media (min-width: 576px){
-  .intro h1{ font-size: 3.5rem; }
-  main{ width: 90%; }
-  #home{ display: flex; }
-  .intro{ justify-content: center; }
-  .intro h1{ text-align: left; }
-  .intro p{
-    padding: .5em 0;
-    text-align: left;
-  }
-  .cta{ align-self: flex-start; }
-
-  #about .summary p{
-    max-width: 60ch;
-    margin: auto;
-  }
-
-  .features{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-    grid-gap: 2em 0;
-  }
-
-  .projects{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-  }
-  .projects picture{ width: 100%; }
-
-  form{ max-width: 75%; }
-}
+@media (min-width: 576px){}
 
 @media (min-width: 768px){
-  nav, header, main, footer{ padding: 1.75em 7.5vw; }
-  main > section{
+  nav, main, footer{ padding: 1.75em 7.5vw; }
+  /* main > section{
     min-height: 60vh;
     justify-content: center;
     align-items: center;
-  }
-  .intro h1{ font-size: 4rem; }
-  nav a:hover{ color: #0000ff; color: rgb(241, 241, 241);}
+  } */
+  /* .intro h1{ font-size: 4rem; } */
+  nav a:hover{ color: rgb(241, 241, 241);}
   .menuToggle{ display: none; }
-  .cta:hover{ background-color: #30bbbb;  }
+  /* .cta:hover{ background-color: #30bbbb;  } */
 
   nav ul{
     flex-direction: row;
@@ -151,45 +93,9 @@ img{
     background-color: inherit;
     font-size: 1.8rem;
   }
-
-  .contact-wrap{
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 0;
-  }
-  form{ width: 100%; }
-  .form-svg{
-    display: block;
-    width: 75%;
-  }
-
-  .form-svg img{
-    width: 100%;
-    height: auto;
-    transform: rotate(-90deg);
-  }
 }
 
 @media (min-width: 992px){
-  /* nav{ padding: 1.75em 10vw; } */
-
-  .logo{
-    margin-left: 5%;
-    font-size: 2.25rem;
-  }
-  nav ul{ margin-right: 2.5%; }
-  #home{
-    width: 90%;
-    margin: auto;
-  }
-  .intro h1{ font-size: 5rem; }
-  .intro p{
-    max-width: 70ch;
-    font-size: 1.8rem;
-  }
-
-  .contact-wrap{ gap: 1em; }
-  form{ width: 80%; }
-  .form-svg{ opacity: 0.5;}
-  .form-svg img{ transform: rotate(0); }
+  nav{ padding: 1.75em 10vw; }
+  .logo{ font-size: 2.5rem; }
 }
