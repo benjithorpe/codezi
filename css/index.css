@@ -17,8 +17,8 @@ h1{
   padding: 0 .25em;
 }
 .intro{
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: row; */
   padding: .7em 1em;
   font-size: 1.55rem;
   line-height: 1.5;
@@ -54,7 +54,7 @@ h1{
   padding: .55em .75em;
   line-height: 1.5;
   color: #444;
-  text-align: center;
+  text-align: left;
 }
 .services h2{
   font-size: 1.7rem;
@@ -68,7 +68,6 @@ h1{
   color: #555;
   text-align: center;
 }
-
 /* ================================================ */
 .testimonials{
   display: flex;
@@ -98,4 +97,61 @@ blockquote{
 }
 [data-component="slideshow"] .slide.active {
   display: block;
+}
+
+/* =============== Media Queries =================== */
+@media (min-width: 400px){
+  .summary p{ padding: .55em 1.25em; }
+  .services{ padding: 1.25em 1.1em;}
+}
+@media (min-width: 576px){
+  blockquote{ padding-top: .75em; }
+}
+@media (min-width: 768px){
+  header{
+    min-height: 50vh;
+    flex-direction: row;
+  }
+  h1{
+    font-size: 3.5rem;
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: left;
+    padding: 0;
+  }
+  .intro{
+    padding: .7em 0;
+  }
+  .cta{
+    font-size: 1.55rem;
+    font-weight: bold;
+    justify-self: left;
+  }
+  .cta:hover{
+    background-color: #3ea7ee;
+  }
+  .summary{
+    width: 65%;
+    margin: auto;
+  }
+  .summary p{
+    padding: .55em 1.25em;
+    font-size: 1.65rem;
+  }
+  .services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .services div{ width: 100%; }
+  .slide{
+    width: 75%;
+    margin: auto;
+  }
+}
+@media (min-width: 992px){
+
+}
+@media (min-width: 1200px){
+
 }
