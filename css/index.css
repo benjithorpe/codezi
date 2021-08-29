@@ -114,7 +114,7 @@ blockquote{
   }
   h1{
     font-size: 3.5rem;
-    line-height: 1.4;
+    line-height: 1.2;
     font-weight: bold;
     text-align: left;
     padding: 0;
@@ -141,7 +141,7 @@ blockquote{
   .services{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 2em;
   }
   .services div{ width: 100%; }
   .slide{
@@ -150,7 +150,29 @@ blockquote{
   }
 }
 @media (min-width: 992px){
-
+  header{
+    min-height: 75vh;
+  }
+  .summary{
+    width: 50%;
+  }
+  .summary p{
+    padding: 1.55em 1.25em;
+  }
+  .services{
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5em;
+  }
+  .slide{
+    width: 45%;
+  }
+  .testimonials{
+    padding-top: 5em;
+  }
+  .testimonials p{
+    font-size: 1.65rem;
+    line-height: 1.55;
+  }
 }
 @media (min-width: 1200px){
 
