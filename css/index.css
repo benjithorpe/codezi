@@ -17,8 +17,6 @@ h1{
   padding: 0 .25em;
 }
 .intro{
-  /* display: flex; */
-  /* flex-direction: row; */
   padding: .7em 1em;
   font-size: 1.55rem;
   line-height: 1.5;
@@ -37,6 +35,11 @@ h1{
   justify-self: center;
 }
 /* ========================================================== */
+.features{
+  background-color: #e5eff5;
+  background-color: #f2faff;;
+  padding: 5em 0;
+}
 .services{
   display: flex;
   flex-direction: column;
@@ -46,8 +49,9 @@ h1{
   width: 90%;
   margin: auto;
   padding: 1.25em 1.1em;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 40px 10px #d5e3eb;
   border-radius: 5px;
+  background-color: #fff;
 }
 .summary p{
   font-size: 1.55rem;
@@ -74,6 +78,8 @@ h1{
   flex-direction: column;
   gap: 2em;
   padding: 2em 1em;
+  /* background-color: hsl(244, 38%, 16%); */
+  background-color: hsl(245, 17%, 29%);
 }
 .testimonials div{
   padding: .5em .75em;
@@ -85,12 +91,12 @@ figcaption h4{
 }
 .testimonials p{
   line-height: 1.5;
-  color: #444;
+  color: #fff;
   text-align: center;
 }
 blockquote{
   text-align: right;
-  color: #666;
+  color: #fbfbfbbf;;
 }
 [data-component="slideshow"] .slide {
   display: none;
@@ -141,7 +147,6 @@ blockquote{
   .services{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2em;
   }
   .services div{ width: 100%; }
   .slide{
@@ -161,7 +166,6 @@ blockquote{
   }
   .services{
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1.5em;
   }
   .slide{
     width: 45%;
