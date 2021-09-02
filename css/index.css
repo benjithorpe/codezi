@@ -1,6 +1,6 @@
 header{
   background-color: white;
-  min-height: 75vh;
+  min-height: 67.5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,12 +18,14 @@ h1{
 }
 .intro{
   padding: .7em 1em;
+  margin-bottom: .5em;
   font-size: 1.55rem;
   line-height: 1.5;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #444;
 }
-.cta{
+.cta{ justify-self: center; }
+.cta a{
   width: max-content;
   padding: .7em 1.5em;
   display: inline-block;
@@ -32,8 +34,11 @@ h1{
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
-  justify-self: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
+.cta a:last-child{ margin-left: .5em; }
+.cta a:first-child{ margin-right: .5em; }
 /* ========================================================== */
 .features{
   background-color: #e5eff5;
@@ -59,6 +64,7 @@ h1{
   line-height: 1.5;
   color: #444;
   text-align: left;
+  font-family: 'Open Sans', sans-serif;
 }
 .services h2{
   font-size: 1.7rem;
@@ -67,10 +73,11 @@ h1{
   margin-bottom: .7em;
 }
 .services p{
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: #555;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 /* ================================================ */
 .testimonials{
@@ -93,6 +100,7 @@ figcaption h4{
   line-height: 1.5;
   color: #fff;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 blockquote{
   text-align: right;
@@ -119,7 +127,7 @@ blockquote{
     flex-direction: row;
   }
   h1{
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     line-height: 1.2;
     font-weight: bold;
     text-align: left;
@@ -133,7 +141,7 @@ blockquote{
     font-weight: bold;
     justify-self: left;
   }
-  .cta:hover{
+  .cta a:hover{
     background-color: #3ea7ee;
   }
   .summary{
@@ -156,7 +164,7 @@ blockquote{
 }
 @media (min-width: 992px){
   header{
-    min-height: 75vh;
+    min-height: 65vh;
   }
   .summary{
     width: 50%;

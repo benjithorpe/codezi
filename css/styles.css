@@ -17,8 +17,8 @@ body{
   font-style: italic;
 }
 .logo a{
-  font-size: 1.9rem;
   color: white;
+  font-size: 1.9rem;
   display: flex;
   align-items: center;
   gap: .2em;
@@ -27,6 +27,15 @@ body{
   width: 2.5em;
   height: 2.5em;
   border-radius: 100%;
+}
+.logo p{
+  width: 5ch;
+  padding: 0;
+  line-height: 0.85;
+}
+.logo span{
+  padding: 0;
+  font-size: 1.4rem;
 }
 nav{
   padding: 1.5em 1em;
