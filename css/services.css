@@ -1,0 +1,6 @@
+.is-flex{
+  gap: 1.5em;
+}
+.has-background-info-light{
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.09);
+}
