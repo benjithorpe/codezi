@@ -4,3 +4,18 @@
 .has-background-info-light{
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.09);
 }
+.info{
+  background-color: #eff5fb!important;
+}
+.info p{
+  font-family: 'Noto Sans JP', sans-serif;;
+  line-height: 1.75;
+  color: #333;
+}
+details[open] summary ~ * {
+  animation: open .5s ease-in-out;
+}
+@keyframes open {
+  from { opacity: 0; margin-left: -2em }
+  to { opacity: 1; margin-left: 0 }
+}
