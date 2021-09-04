@@ -1,64 +1,49 @@
-/* CONTACT */
-.contact-wrap{
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-form{
+section{
   width: 90%;
   margin: auto;
+}
+form{
   padding: 1em;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
+  display: grid;
+  gap: 1.25em;
 }
-
 form label{
-  display: block;
-  font-size: 1.5rem;
   text-transform: uppercase;
-  font-family: monospace;
-  margin-bottom: 0.2em;
 }
-
-form input, textarea{
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: .6em;
-  font-size: 1.5rem;
-  font-family: inherit;
-}
-
-textarea{
-  min-height: 10em;
-  width: 100%;
-}
-
-input:focus, textarea:focus{
-  outline: none;
-  border-color: grey;
-}
-
 button{
-  align-self: center;
-  border: none;
-  border-radius: 2px;
-  padding: .7em 1em;
-  background-color: #2bb6b6;
-  color: #fff;
-  font-size: 1.5rem;
   font-weight: bold;
-  cursor: pointer;
+}
+.bonus-info{
+  margin-top: 2em;
+  padding: 1.2em;
+  display: grid;
+  grid-gap: 1em;
+}
+.bonus-info h3{
+  font-size: 4rem;
+  color: #222;
+}
+.bonus-info div{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.bonus-info div p{
+  font-size: 1.65rem;
 }
 
-.form-svg{ display: none; }
-
-
-/* FOOTER */
-footer{
-  margin-top: 2em;
-  min-height: 10vh;
-  background-color: #ccc;
+@media (min-width: 768px){
+  section{
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    justify-content: start;
+  }
+  form{
+    width: 100%;
+  }
+  .bonus-info{
+    margin: 0;
+    grid-gap: 0em;
+  }
 }

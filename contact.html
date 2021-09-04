@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script src="js/menu.js" defer></script>
 </head>
@@ -27,7 +30,7 @@
       <!-- <li><a href="about.html">About</a></li> -->
       <li><a href="services.html">Services</a></li>
       <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
     <div class="menuToggle">
       <div></div>
@@ -37,32 +40,66 @@
   </nav>
 
   <main>
-    <form netlify method="POST" name="contact">
-      <div class="field">
-        <label class="label is-size-5">Name</label>
+    <section>
+      <form netlify method="POST" name="contact">
+        <div class="field">
+          <label class="label is-size-5">Name</label>
+          <div class="control">
+            <input class="input is-info is-large" type="text" placeholder="John Doe" name="name" required>
+          </div>
+        </div>
+  
+        <div class="field">
+          <label class="label is-size-5">Email</label>
+          <div class="control">
+            <input class="input is-info is-large" type="email" placeholder="johndoe@gmail.com" name="email" required>
+          </div>
+        </div>
+  
+        <div class="field">
+          <label class="label is-size-5">Message</label>
+          <div class="control">
+            <textarea class="textarea is-info is-large" placeholder="Send us a message." name="message" required></textarea>
+          </div>
+        </div>
+  
         <div class="control">
-          <input class="input is-info is-large" type="text" placeholder="John Doe" name="name" required>
+          <button class="button is-link is-large">Submit</button>
+        </div>
+      </form>
+
+      <div class="bonus-info">
+        <div>
+          <h3><i class="fas fa-phone-alt"></i></h3>
+          <p><strong>Phone</strong><br> +232 99-119-000</p>
+        </div>
+
+        <div>
+          <h3 class="has-text-danger"><i class="fas fa-envelope"></i></h3>
+          <p><strong>Email</strong><br> codezitechnologies@gmail.com</p>
+        </div>
+        
+        <!-- <div>
+          <h3 class="has-text-info"><i class="fab fa-twitter"></i></h3>
+          <p><strong>Twitter</strong><br> our/twitter/link</p>
+        </div> -->
+        
+        <div>
+          <h3 class="has-text-info"><i class="fab fa-facebook"></i></h3>
+          <p><strong>Facebook</strong><br> our/facebook/link</p>
+        </div>
+
+        <div>
+          <h3 class="has-text-info"><i class="fab fa-linkedin"></i></h3>
+          <p><strong>LinkedIn</strong><br> <a href="https://www.linkedin.com/company/codezi/">Follow Us</a></p>
+        </div>
+
+        <div>
+          <h3 class="has-text-warning"><i class="fab fa-instagram"></i></h3>
+          <p><strong>Instagram</strong><br> our/instagram/link</p>
         </div>
       </div>
-
-      <div class="field">
-        <label class="label is-size-5">Email</label>
-        <div class="control">
-          <input class="input is-info is-large" type="email" placeholder="johndoe@gmail.com" name="email" required>
-        </div>
-      </div>
-
-      <div class="field">
-        <label class="label is-size-5">Message</label>
-        <div class="control">
-          <textarea class="textarea is-info is-large" placeholder="Textarea" name="message" required></textarea>
-        </div>
-      </div>
-
-      <div class="control">
-        <button class="button is-link is-large">Submit</button>
-      </div>
-    </form>
+    </section>
   </main>
 
   <!-- <footer>
