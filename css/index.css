@@ -85,7 +85,6 @@ h1{
   flex-direction: column;
   gap: 2em;
   padding: 2em 1em;
-  /* background-color: hsl(244, 38%, 16%); */
   background-color: hsl(245, 17%, 29%);
 }
 .testimonials div{
@@ -186,6 +185,4 @@ blockquote{
     line-height: 1.55;
   }
 }
-@media (min-width: 1200px){
-
-}
+@media (min-width: 1200px){}
