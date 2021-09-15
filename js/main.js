@@ -90,7 +90,7 @@
     });
   });
 
-  // jQuery counterUp (used in Whu Us section)
+  // jQuery counterUp (used in Why Us section)
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
